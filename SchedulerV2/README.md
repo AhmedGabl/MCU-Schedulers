@@ -1,4 +1,5 @@
 # MCU Scheduler - Version 2
+https://github.com/AhmedGabl/MCU-Schedulers/assets/63268983/b03952b1-fd5b-4193-8669-76bf8280a81f
 
 ## Overview
 
