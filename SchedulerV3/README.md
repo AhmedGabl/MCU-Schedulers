@@ -1,27 +1,28 @@
-# MCU Schedulers
+# MCU Scheduler - Version 3
 
-This repository contains three versions of microcontroller-based schedulers implemented in C.
+## Overview
 
-## Schedulers
+This version of the MCU Scheduler extends the functionality to handle multiple tasks with the same priority. The main file (`main.c`) demonstrates the scheduler's capabilities by creating LED tasks with various priorities and initial delays. The scheduler, implemented in `OS_program.c`, manages the execution of tasks with consideration for priority and initial delay.
 
-### Scheduler V1: Simple Scheduler
-- Basic scheduler without initial delay.
-- Suitable for projects with tasks that need to run periodically.
+## Handling Same Priority Tasks
 
-### Scheduler V2: Delayed Scheduler
-- Enhanced scheduler with initial delay for each task.
-- Useful when tasks require a delay before their first execution.
+In scenarios where tasks share the same priority level, this version allows you to create and manage multiple tasks concurrently. This can be beneficial for systems with parallel processes that need to be executed simultaneously.
 
-### Scheduler V3: Priority Scheduler
-- Advanced scheduler supporting tasks with the same priority level.
-- Enables scheduling multiple tasks at the same priority level.
+## How to Use
 
-## Getting Started
+1. **Task Creation:**
+   - Open `main.c` and use `OS_voidCreateTask` to create LED tasks.
+   - Adjust task periodicity (time between executions) and initial delays based on your requirements.
 
-Each scheduler version is contained in a separate directory. Follow the instructions in each directory's README for specific setup and usage details.
+2. **Start the Scheduler:**
+   - Call `OS_voidStartScheduler` in `main.c` to begin task execution.
 
-## Directory Structure
+3. **Additional Functions:**
+   - `OS_voidDeleteTask`: Deletes a task.
+   - `OS_voidSuspendTask`: Suspends a task for a specified time.
+   - `OS_voidResumeTask`: Resumes a suspended task.
+   - `OS_u8GetTaskState`: Retrieves the state of a task.
 
-- `SchedulerV1/`: Simple Scheduler Version 1
-- `SchedulerV2/`: Delayed Scheduler Version 2
-- `SchedulerV3/`: Priority Scheduler Version 3
+## Contributors
+
+- Author: Ahmed Abogabl
