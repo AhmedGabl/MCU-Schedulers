@@ -1,7 +1,7 @@
 # MCU Scheduler - Version 1
+https://github.com/AhmedGabl/MCU-Schedulers/assets/63268983/f2d82a36-1786-4992-8702-bc92a6e56b84
 
 ## Overview
-
 This project demonstrates a basic task scheduler for microcontrollers (MCUs). The main file (`main.c`) initializes the scheduler and creates three LED tasks. The scheduler, implemented in `OS_program.c`, manages task execution with fixed periodicity, running all tasks at the beginning.
 
 ## How to Use
